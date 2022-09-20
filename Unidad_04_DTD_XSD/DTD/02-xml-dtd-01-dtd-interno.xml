@@ -10,8 +10,8 @@
   <superheroe>
   	<nombre>Iron Man</nombre>
   	<poderes>
-  		<poder></poder>
-  		<poder></poder>
+  		<poder>Multimillonario</poder>
+  		<poder>Inteligencia</poder>
   		<poder>Armadura prodigiosa</poder>
   	</poderes>
   </superheroe>
