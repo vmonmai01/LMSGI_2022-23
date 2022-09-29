@@ -1,23 +1,17 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE marvel [
-  <!ELEMENT marvel (superheroe*, villano*, superpoder*)>
+  <!ELEMENT marvel (superheroe*, villano*)>
   <!ELEMENT superheroe EMPTY>
-  <!ATTLIST superheroe nombre CDATA #REQUIRED>
-  <!ATTLIST superheroe identificador ID #REQUIRED>
-  <!ELEMENT villano EMPTY>  
-  <!ATTLIST villano identificador ID #REQUIRED>
-  <!ELEMENT superpoder (#PCDATA)>
-  <!ATTLIST superpoder pertenece_a IDREF #REQUIRED>
+  <!ELEMENT villano EMPTY>
+  <!ATTLIST superheroe nombre ID #REQUIRED>
+  <!ATTLIST villano nombre CDATA #REQUIRED>
+  <!ATTLIST villano enfrentadoCon IDREFS #IMPLIED>
 ]>
 <marvel> 
-  <superheroe nombre="Thor" identificador="a1"/>
-  <superheroe nombre="Hulk" identificador="a2"/>
-  <superheroe nombre="Iron Man" identificador="a3"/>
-  <villano identificador="a"/>
-  <superpoder pertenece_a="a1">Martillo prodigioso</superpoder>
-  <superpoder pertenece_a="a1">Dios del trueno</superpoder>
-  <superpoder pertenece_a="a1">Resistencia</superpoder>
-  <superpoder pertenece_a="a2">Fuerza</superpoder>
-  <superpoder pertenece_a="a2">Indestructible</superpoder>
-  <superpoder pertenece_a="a3">Armadura con poderes</superpoder>
+  <superheroe nombre="Thor"/>
+  <superheroe nombre="Capitana_Marvel"/>
+  <superheroe nombre="Maria_Gil"/>
+  <superheroe nombre="IronMan"/>
+  <villano nombre="Loki" enfrentadoCon="Thor"/>
+  <villano nombre="Thanos" enfrentadoCon="Thor Capitana_Marvel Maria_Gil IronMan"/>
 </marvel>
